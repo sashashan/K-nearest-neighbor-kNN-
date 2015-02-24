@@ -4,17 +4,18 @@
 
 							K nearest neighbor algorithm
 
-The data is available in the files “train 86 by 71.txt”, “tune 20 by 71.txt”, and “test 12 by 70.txt”.
-The total number of samples is 118 (one line per paper). (A number of other papers with known
-authorship of either Hamilton or Madison were added to the dataset, to provide extra data on
-how the two authors made use of vocabulary.) The “train 86 by 71.txt” file is used to train the
-model (K-NN). The “tune 20 by 71.txt” is used to tune the parameter K. The first entry in each
-line contains the code number of the author: 1 for Hamilton and 2 for Madison. The remaining
-entries contain 70 floating point numbers that correspond to the relative frequencies (number of
-occurrences per 1000 words of the text) of the 70 function words, which are also available in the
-data file as an array of strings. The “train 86 by 71.txt” has 86 samples and the tune 20 by 71.txt”
-file has 20 samples.
-The “test 12 by 70.txt” file is used to test the K-NN model. It has 12 samples, that is, 12
+The data is available in the files “train 86 by 71.txt”, “tune 20 by 71.txt”, and “test 12 by 70.txt”. 
+The total number of samples is 118 (one line per paper). (A number of other papers with known 
+authorship of either Hamilton or Madison were added to the dataset, to provide extra data on 
+how the two authors made use of vocabulary.) The “train 86 by 71.txt” file is used to train the 
+model (K-NN). The “tune 20 by 71.txt” is used to tune the parameter K. The first entry in each 
+line contains the code number of the author: 1 for Hamilton and 2 for Madison. The remaining 
+entries contain 70 floating point numbers that correspond to the relative frequencies (number of 
+occurrences per 1000 words of the text) of the 70 function words, which are also available in the 
+data file as an array of strings. The “train 86 by 71.txt” has 86 samples and the tune 20 by 71.txt” 
+file has 20 samples. 
+
+The “test 12 by 70.txt” file is used to test the K-NN model. It has 12 samples, that is, 12 
 disputed papers. Each line in this file corresponds to a disputed paper.
 
 This program predicts using kNN the authors of the disputed papers. 
